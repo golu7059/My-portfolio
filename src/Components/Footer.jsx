@@ -30,7 +30,7 @@ const Footer = () => {
                     <a href="https://twitter.com/golu7059" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600">
                         <FaTwitter className="text-2xl" />
                     </a>
-                    <a href="mailto:golukumar@example.com" className="hover:text-orange-600">
+                    <a href="mailto:golukumarjaisidih@gmail.com" className="hover:text-orange-600">
                         <FaEnvelope className="text-2xl" />
                     </a>
                 </div>
