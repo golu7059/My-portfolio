@@ -3,10 +3,11 @@ import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { SiHashnode } from "react-icons/si";
+import { PiArrowCircleDownBold } from "react-icons/pi";
 
 const Home = () => {
     return (
-        <section className="min-h-screen bg-black text-white flex items-center justify-center">
+        <section id='Home' className="min-h-screen bg-black text-white flex items-center justify-center">
             <div className="container mx-auto flex flex-col items-center md:flex-row">
                 <div className="flex items-center justify-center mt-8 md:mt-0 lg:w-1/2 md:order-last">
                     <img
@@ -37,7 +38,7 @@ const Home = () => {
                         like C, Java, Python,.. and
                         <span className='text-orange-600 text-2xl font-semibold font-mono text-center'> MERN Stack</span>,
                     </p>
-                    <div className="flex items-center justify-center md:justify-start mt-6 download">
+                    <div className="flex items-center gap-3 justify-center md:justify-start mt-6 download">
                         <a
                             href="./Golu_Kumar_Resume.pdf"
                             download={"./Golu_Kumar_Resume.pdf"}
@@ -45,6 +46,7 @@ const Home = () => {
                         >
                             Resume
                         </a>
+                        <PiArrowCircleDownBold className='text-orange-600 animate-bounce text-3xl'/>
                     </div>
                     <div className="flex space-x-4 mt-6">
                         <a href="https://www.linkedin.com/in/golu-kumar-7079b5246/" target="_blank" rel="noopener noreferrer">
