@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect} from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
@@ -10,6 +10,10 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 const Home = () => {
     // State to track the download status
     const [downloadStatus, setDownloadStatus] = useState('normal');
+
+    useEffect(() =>{
+        document.title = "golu kumar portfolio"
+    },[])
 
     // Function to handle resume download
     const handleDownload = () => {
