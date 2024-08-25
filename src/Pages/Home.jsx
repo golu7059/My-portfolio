@@ -56,7 +56,7 @@ const Home = () => {
             <div className="container mx-auto flex flex-col items-center md:flex-row">
                 <div className="flex items-center justify-center mt-8 md:mt-0 lg:w-1/2 md:order-last">
                     <img
-                        src="/profileImage.JPG" // Updated image path
+                        src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/profileImage.JPG" 
                         alt="Golu Kumar"
                         className="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover shadow-[0_0_15px_rgba(1,1,255,0.9)]"
                         onMouseMove={handleMouseMove}
@@ -125,4 +125,3 @@ const Home = () => {
 };
 
 export default Home;
-    
