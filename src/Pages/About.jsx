@@ -7,7 +7,7 @@ const About = () => {
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg">
           <img 
             className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-blue-500"
-            src="Public/aboutCoding.png" 
+            src="/aboutCoding.png" 
             alt="coding_logo"
           />
         </div>
