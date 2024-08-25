@@ -6,6 +6,8 @@ import Languages from "./Components/Languages"
 import Projects from "./Pages/Projects"
 import Contact from "./Pages/Contact"
 import Footer from "./Components/Footer"
+import Certificates from "./Components/Certificates"
+import Achievements from "./Components/Achivements"
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
        <Navbar/>
        <Home/>
        <About/>
+       <Achievements/>
+       <Certificates/>
        <Education/>
        <Languages/>
        <Projects/>
