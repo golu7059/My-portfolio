@@ -89,10 +89,11 @@ const Home = () => {
                     </p>
                     <div className="flex items-center gap-3 justify-center md:justify-start mt-6 download">
                         <a
-                            href="./Golu_Kumar_Resume.pdf"
-                            download={"./Golu_Kumar_Resume.pdf"}
+                            href="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/Golu_Kumar_Resume.pdf"
+                            download={"Golu-kumar-resume"}
                             className="inline-block bg-red-500 text-white px-6 py-2 rounded-full font-bold hover:bg-red-600 transition duration-300"
                             onClick={handleDownload}
+                            name = "resume"
                         >
                             Resume
                         </a>

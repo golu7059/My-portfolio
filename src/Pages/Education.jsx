@@ -16,7 +16,7 @@ const Education = () => {
                     <p className="text-sm mb-4">Prepared for JNV calss 6th exam and get Qualified </p>
                     <img 
                     className="rounded-lg"
-                    src="/ABPN.jpg" 
+                    src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/ABPN.jpg" 
                     alt="image" />
                      <p className="text-sm mt-2 font-semibold"><span className="text-orange-600 text-lg">Year : </span>2013 - 2015</p>
                     <p className="text-sm mt-1 font-semibold"><span className="text-orange-600 text-lg">Qualified : </span>JNV Exam</p>
@@ -31,7 +31,7 @@ const Education = () => {
                     <p className="text-sm mb-4">Studied class 6th-12th </p>
                     <img 
                     className="rounded-lg"
-                    src="/jnvBihiya4.jpg" 
+                    src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/jnvBihiya4.jpg" 
                     alt="image" />
                     <p className="text-sm mt-2 font-semibold"><span className="text-orange-600 text-lg">Year : </span>2015 - 2021</p>
                     <p className="text-sm mt-1 font-semibold"><span className="text-orange-600 text-lg">10th : </span>88.8%</p>
@@ -48,7 +48,7 @@ const Education = () => {
                     <p className="text-sm mb-4">B.Tech in Computer Science and Engineering.</p>
                     <img 
                     className="rounded-lg "
-                    src="/PU.png" 
+                    src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/PU.png" 
                     alt="image" />
                     <p className="text-sm mt-2 font-semibold"><span className="text-orange-600 text-lg">Year : </span>2022 - present</p>
                     <p className="text-sm mt-1 font-semibold"><span className="text-orange-600 text-lg">current Semester : </span>5th</p>
