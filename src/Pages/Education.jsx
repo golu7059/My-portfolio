@@ -18,7 +18,7 @@ const Education = () => {
                     className="rounded-lg"
                     src="/ABPN.jpg" 
                     alt="image" />
-                     <p className="text-sm mt-4 font-semibold"><span className="text-orange-600 text-lg">Year : </span>2013 - 2015</p>
+                     <p className="text-sm mt-2 font-semibold"><span className="text-orange-600 text-lg">Year : </span>2013 - 2015</p>
                     <p className="text-sm mt-1 font-semibold"><span className="text-orange-600 text-lg">Qualified : </span>JNV Exam</p>
                     
                 </div>
@@ -33,7 +33,7 @@ const Education = () => {
                     className="rounded-lg"
                     src="/jnvBihiya4.jpg" 
                     alt="image" />
-                    <p className="text-sm mt-4 font-semibold"><span className="text-orange-600 text-lg">Year : </span>2015 - 2021</p>
+                    <p className="text-sm mt-2 font-semibold"><span className="text-orange-600 text-lg">Year : </span>2015 - 2021</p>
                     <p className="text-sm mt-1 font-semibold"><span className="text-orange-600 text-lg">10th : </span>88.8%</p>
                     <p className="text-sm mt-1 font-semibold"><span className="text-orange-600 text-lg">12th : </span>88.6%</p>
                    
@@ -51,8 +51,8 @@ const Education = () => {
                     src="/PU.png" 
                     alt="image" />
                     <p className="text-sm mt-2 font-semibold"><span className="text-orange-600 text-lg">Year : </span>2022 - present</p>
-                    <p className="text-sm mt-2 font-semibold"><span className="text-orange-600 text-lg">current Semester : </span>5th</p>
-                    <p className="text-sm mt-2 font-semibold"><span className="text-orange-600 text-lg">current CGPA : </span>8.7</p>
+                    <p className="text-sm mt-1 font-semibold"><span className="text-orange-600 text-lg">current Semester : </span>5th</p>
+                    <p className="text-sm mt-1 font-semibold"><span className="text-orange-600 text-lg">current CGPA : </span>8.7</p>
 
                 </div>
 
