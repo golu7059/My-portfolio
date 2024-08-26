@@ -8,23 +8,24 @@ import Contact from "./Pages/Contact"
 import Footer from "./Components/Footer"
 import Certificates from "./Components/Certificates"
 import Achievements from "./Components/Achivements"
+import { Toaster } from 'react-hot-toast'
 
 function App() {
-
   return (
-    <div className="bg-black">
-       <Navbar/>
-       <Home/>
-       <About/>
-       <Achievements/>
-       <Certificates/>
-       <Education/>
-       <Languages/>
-       <Projects/>
-       <Contact/>
-       <Footer/>
-    </div>
-  )
+    <>
+      <Toaster position="top-center" reverseOrder={false} />
+      <Navbar />
+      <Home />
+      <About />
+      <Achievements />
+      <Certificates />
+      <Education />
+      <Languages />
+      <Projects />
+      <Contact />
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
