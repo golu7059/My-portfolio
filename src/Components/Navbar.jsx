@@ -37,14 +37,14 @@ const Navbar = () => {
 
                 {/* Mobile Menu Icon (visible on smaller screens) */}
                 <div className="md:hidden flex items-center justify-end" onClick={toggleMenu}>
-                    {isOpen ? <FaTimes className="text-2xl cursor-pointer" /> : <FaBars className="text-2xl cursor-pointer" />}
+                    {isOpen ? <FaTimes className="text-2xl cursor-pointer opacity-100 z-10 hover:text-red-600 active:text-green-800" /> : <FaBars className="text-2xl cursor-pointer hover:text-orange-700 active:text-orange-500" />}
                 </div>
             </div>
 
             {/* Mobile Navigation Menu */}
             <nav
                 className={`fixed top-0 left-0 w-full bg-black transition-all duration-500 ease-in-out ${
-                    isOpen ? 'max-h-1/2 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+                    isOpen ? 'max-h-1/2 opacity-85' : 'max-h-0 opacity-0 overflow-hidden'
                 } md:hidden`}
             >
                 <ul className="flex flex-col items-center space-y-2 py-6">
