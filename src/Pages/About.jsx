@@ -25,14 +25,14 @@ const About = () => {
               I am an adaptable and adaptable person, with a strong desire to learn and grow. 
               I am a <span className='text-orange-600'>quick learner</span>, and I am able to work well in a team environment.
 
-              My technical repertoire includes proficiency in Java, JavaScript, Python, and C, along with expertise in frontend 
+              <span className='hidden md:block'>My technical repertoire includes proficiency in Java, JavaScript, Python, and C, along with expertise in frontend 
               technologies such as HTML, CSS, Tailwind, and React. On the backend, I excel in Node.js, 
               Express, Flask, and Django, complemented by hands-on experience with databases like MySQL, MongoDB, 
-              and PostgreSQL.
+              and PostgreSQL.</span>
             </p>
           </div>
           <div className="md:w-1/2 p-4">
-            <p className="text-black text-lg mt-5">
+            <p className="text-black text-lg mt-5 hidden md:block">
               Throughout my journey, I have successfully developed and deployed a range of projects. 
               During my internship at Bharat Intern, I demonstrated my capability to work on complex projects,
               including implementing a drag-and-drop feature, creating a task manager, and developing a 
