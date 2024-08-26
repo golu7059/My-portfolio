@@ -6,6 +6,7 @@ import { SiHashnode } from "react-icons/si";
 import { PiArrowCircleDownBold } from "react-icons/pi";
 import { MdOutlineDownloadDone } from "react-icons/md";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { toast } from 'react-hot-toast'
 
 const Home = () => {
     // State to track the download status
@@ -18,13 +19,24 @@ const Home = () => {
     }, []);
 
     // Function to handle resume download
-    const handleDownload = () => {
+    const handleDownload = (event) => {
+        event.preventDefault(); // Prevent the default anchor click behavior
         setDownloadStatus('loading');
-        // Simulate download delay
+    
+        const toastId = toast.loading("Downloading resume...");
+    
         setTimeout(() => {
             setDownloadStatus('downloaded');
+            toast.success("Resume downloaded successfully!", { id: toastId });
+    
+            // Create a link element to trigger the download
+            const link = document.createElement('a');
+            link.href = "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/Golu_Kumar_Resume.pdf";
+            link.download = "Golu-Kumar-Resume.pdf";
+            link.click(); // Trigger the download programmatically
         }, 2000); // 2 seconds delay to simulate download
     };
+
 
     // Mouse movement
     const handleMouseMove = (e) => {
@@ -56,7 +68,7 @@ const Home = () => {
             <div className="container mx-auto flex flex-col items-center md:flex-row">
                 <div className="flex items-center justify-center mt-8 md:mt-0 lg:w-1/2 md:order-last">
                     <img
-                        src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/profileImage.JPG" 
+                        src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/profileImage.JPG"
                         alt="Golu Kumar"
                         className="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover shadow-[0_0_15px_rgba(1,1,255,0.9)]"
                         onMouseMove={handleMouseMove}
@@ -89,11 +101,10 @@ const Home = () => {
                     </p>
                     <div className="flex items-center gap-3 justify-center md:justify-start mt-6 download">
                         <a
-                            href="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/Golu_Kumar_Resume.pdf"
-                            download={"Golu-kumar-resume"}
+                            href="#"
                             className="inline-block bg-red-500 text-white px-6 py-2 rounded-full font-bold hover:bg-red-600 transition duration-300"
                             onClick={handleDownload}
-                            name = "resume"
+                            name="resume"
                         >
                             Resume
                         </a>
