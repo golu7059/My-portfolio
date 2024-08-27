@@ -3,7 +3,7 @@ import "tailwindcss/tailwind.css";
 
 const Achievements = () => {
   return (
-    <section className="bg-black py-16 px-8">
+    <section className="bg-black py-16 px-8  bg-gradient-to-b from-black via-gray-900 to-black">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         {/* Left side content */}
         <div className="md:w-1/2 text-center md:text-left">
@@ -14,9 +14,11 @@ const Achievements = () => {
             Dive into my accomplishments, including my coding journey, hackathon participation, and contributions to open source projects. These experiences showcase my commitment to continuous learning and problem-solving in the tech industry.
           </p>
           <div className="space-x-4">
+            <a href="#Projects">
             <button className="bg-orange-600 text-white px-6 py-2 rounded hover:bg-orange-700 transition duration-300">
               Explore My Work
             </button>
+            </a>
             <a href="#Contact">
             <button className="border-2 border-orange-500 text-orange-500 px-6 py-2 rounded hover:bg-orange-600 hover:text-white transition duration-300">
               Contact Me
