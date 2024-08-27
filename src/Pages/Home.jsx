@@ -64,7 +64,7 @@ const Home = () => {
     };
 
     return (
-        <section id='Home' className="min-h-screen bg-black text-white flex items-center justify-center">
+        <section id='Home' className="min-h-screen bg-black text-white flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-black ">
             <div className="container mx-auto flex flex-col items-center md:flex-row">
                 <div className="flex items-center justify-center mt-8 md:mt-0 lg:w-1/2 md:order-last">
                     <img
@@ -94,10 +94,10 @@ const Home = () => {
                         />
                     </h2>
                     <p className="mt-4 text-lg md:text-xl">
-                        As a passionate Full Stack Developer pursuing a B.Tech in Computer Science
-                        at Parul University, I specialize in many programming languages <br />
-                        like C, Java, Python,.. and
-                        <span className='text-orange-600 text-2xl font-semibold font-mono text-center'> MERN Stack</span>,
+                        Currently pursuing B.Tech degree  in Computer Science and Engineering,
+                        at Parul University, I specialize in many programming languages
+                        such as  C, Java, Python, javascript... and
+                        <span className='text-orange-600 text-2xl font-semibold font-mono text-center'> MERN Stack </span>.
                     </p>
                     <div className="flex items-center gap-3 justify-center md:justify-start mt-6 download">
                         <a
@@ -121,13 +121,13 @@ const Home = () => {
                     </div>
                     <div className="flex space-x-4 mt-6">
                         <a href="https://www.linkedin.com/in/golu-kumar-7079b5246/" target="_blank" rel="noopener noreferrer">
-                            <FaLinkedin alt="LinkedIn" className="h-8 w-8 text-white hover:text-orange-600 transform hover:scale-110 transition" />
+                            <FaLinkedin alt="LinkedIn" className="h-8 w-8 text-white hover:text-blue-600 transform hover:scale-110 transition" />
                         </a>
                         <a href="https://github.com/golu7059" target="_blank" rel="noopener noreferrer">
                             <FaGithub className="h-8 w-8 text-white hover:text-orange-600 transform hover:scale-110 transition" />
                         </a>
                         <a href="https://hashnode.com/@golu7059" target="_blank" rel="noopener noreferrer">
-                            <SiHashnode alt="Medium" className="h-8 w-8 text-white hover:text-orange-600 transform hover:scale-110 transition" />
+                            <SiHashnode alt="Medium" className="h-8 w-8 text-white hover:text-blue-600 transform hover:scale-110 transition" />
                         </a>
                     </div>
                 </div>
