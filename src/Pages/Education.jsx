@@ -3,8 +3,8 @@ import { FaSchool, FaGraduationCap, FaBook } from "react-icons/fa";
 
 const Education = () => {
     return (
-        <section id="Education" className="p-8 bg-gradient-to-b from-black via-blue-900 to-black text-white">
-            <h2 className="text-4xl font-bold font-sans text-center mt-10 mb-16 animate-fadeIn tracking-wider text-gradient-to-r from-white to-red-600">
+        <section id="Education" className="p-8 bg-gradient-to-b from-black via-blue-950 to-black text-white">
+            <h2 className="text-4xl font-bold font-sans text-center mt-5 mb-16 animate-fadeIn tracking-wider">
                 My Academic Journey
             </h2>
             

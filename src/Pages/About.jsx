@@ -22,11 +22,11 @@ const About = () => {
               in <span className='text-orange-600'>Computer Science and Engineering</span> at Parul University, I have maintained a strong academic
               record with a CGPA of 8.7, which reflects my dedication and understanding of core technical concepts.
 
-              I am an adaptable and adaptable person, with a strong desire to learn and grow. 
+              I am an adaptable person, with a strong desire to learn and grow. 
               I am a <span className='text-orange-600'>quick learner</span>, and I am able to work well in a team environment.
 
               <span className='hidden md:block'>My technical repertoire includes proficiency in Java, JavaScript, Python, and C, along with expertise in frontend 
-              technologies such as HTML, CSS, Tailwind, and React. On the backend, I excel in Node.js, 
+              technologies such as HTML, CSS, Tailwind, Bootstrap and React. On the backend, I excel in Node.js, 
               Express, Flask, and Django, complemented by hands-on experience with databases like MySQL, MongoDB, 
               and PostgreSQL.</span>
             </p>
