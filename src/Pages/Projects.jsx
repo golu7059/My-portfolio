@@ -5,28 +5,28 @@ const projects = [
   {
     title: "Movie Search",
     description: "A movie search website built using HTML, CSS, and JavaScript. Fetches movie data from the IMDB API as you type.",
-    imgSrc: "https://via.placeholder.com/300x200.png?text=Movie+Search", 
+    imgSrc: "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/movieProject.png", 
     githubLink: "https://github.com/golu7059/movies",
     liveDemoLink: "",
   },
   {
     title: "Learning Management System",
     description: "A full-featured LMS built with the MERN stack. Includes user authentication, course management, and subscription features.",
-    imgSrc: "https://via.placeholder.com/300x200.png?text=LMS", 
+    imgSrc: "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/Lms.png", 
     githubLink: "https://github.com/golu7059/LMS",
     liveDemoLink: "",
   },
   {
     title: "Pokedex App",
     description: "A responsive web app using React and PokeAPI to display Pokémon information.",
-    imgSrc: "https://via.placeholder.com/300x200.png?text=Pokedex", 
+    imgSrc: "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/PokedexProject.png", 
     githubLink: "https://github.com/golu7059/Pokedex",
     liveDemoLink: "",
   },
   {
     title: "Authenticated To-Do App",
     description: "An advanced to-do application with user authentication and real-time updates using Flask and SQLite.",
-    imgSrc: "https://via.placeholder.com/300x200.png?text=To-Do+App",
+    imgSrc: "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/todoProject.png",
     githubLink: "https://github.com/golu7059/flask-Todo",
     liveDemoLink: "https://golutodo.onrender.com/",
   },
@@ -35,7 +35,7 @@ const projects = [
 const Projects = () => {
   return (
     <section id="Projects" className="p-8 bg-gradient-to-b from-black via-gray-800 to-black text-white">
-      <h2 className="text-3xl font-bold font-mono text-rose-300 text-center mb-10">Projects</h2>
+      <h2 className="text-3xl font-bold font-mono text-center mb-10">Projects</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
