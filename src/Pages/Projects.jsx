@@ -7,7 +7,7 @@ const projects = [
     description: "A movie search website built using HTML, CSS, and JavaScript. Fetches movie data from the IMDB API as you type.",
     imgSrc: "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/movieProject.png", 
     githubLink: "https://github.com/golu7059/movies",
-    liveDemoLink: "",
+    liveDemoLink: "https://golu-movies.vercel.app/",
   },
   {
     title: "Learning Management System",
@@ -21,7 +21,7 @@ const projects = [
     description: "A responsive web app using React and PokeAPI to display Pokémon information.",
     imgSrc: "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/PokedexProject.png", 
     githubLink: "https://github.com/golu7059/Pokedex",
-    liveDemoLink: "",
+    liveDemoLink: "https://golu-pokedex-project.vercel.app/",
   },
   {
     title: "Authenticated To-Do App",
@@ -30,6 +30,13 @@ const projects = [
     githubLink: "https://github.com/golu7059/flask-Todo",
     liveDemoLink: "https://golutodo.onrender.com/",
   },
+  {
+    title: "Tic-tac-Toe game",
+    description: "A Tic-tac-toe game build using React, Tailwind and currently I am integreating socket.io so users can play oline also",
+    imgSrc: "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/tic-tac-toe.png",
+    githubLink: "https://github.com/golu7059/tic-tac-toe",
+    liveDemoLink: "https://tic-tac-toe-dun-seven.vercel.app/",
+  }
 ];
 
 const Projects = () => {
