@@ -15,12 +15,14 @@ const Contact = () => {
         const toastId = toast.loading("Sending email, please wait...");
     
         emailjs
-          .sendForm(
-            "service_lrkk1bw", // EmailJS service ID
-            "template_hjmg2xl", // EmailJS template ID
-            event.target,
-            "j2apcgSJf0k_h6J_F" // EmailJS public key
-          )
+        .sendForm(
+          import.meta.env.VITE_SERVICE_ID, // EmailJS service ID
+          import.meta.env.VITE_TEMPLATE_ID, // EmailJS template ID
+          event.target,
+          import.meta.env.VITE_PUBLIC_KEY // EmailJS public key
+        )
+      
+          
           .then(
             () => {
               setSubmitStatus("sent");
