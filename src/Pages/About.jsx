@@ -9,7 +9,7 @@ const About = () => {
             className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-blue-500"
             src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/aboutCoding.png" 
             alt="coding_logo"
-          />
+          /> 
         </div>
         <div className="flex flex-col md:flex-row mt-16">
           <div className="md:w-1/2 p-4">
