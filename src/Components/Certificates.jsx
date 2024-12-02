@@ -7,7 +7,8 @@ const Certificates = () => {
     const certificates = [
         { id: 1, src: "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/FullStackCertificate.png", title: "Full Stack Developer Certificate" },
         { id: 2, src: "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/CNCertificate.jpg", title: "Computer Networking Certificate" },
-        { id: 3, src: "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/cyberBullyingCertificate.jpg", title: "Cyber Bullying Awareness Certificate" },
+        {id: 3, src: "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/TheoryOfComputation.jpg", title: "TOC Certificate"},
+        { id: 4, src: "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/cyberBullyingCertificate.jpg", title: "Cyber Bullying Awareness Certificate" },
         // Add more certificates as needed
     ];
 
