@@ -55,13 +55,6 @@ const Achievements = () => {
             </div>
             <div className="transform hover:scale-105 transition duration-500">
               <img
-                src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/linkedinScreenshot.png"
-                alt="LinkedIn Profile"
-                className="w-full rounded-2xl shadow-lg hover:shadow-orange-500"
-              />
-            </div>
-            <div className="transform hover:scale-105 transition duration-500">
-              <img
                 src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/codeRazers_certificate.jpg"
                 alt="codeRazers certificate"
                 className="w-full rounded-2xl shadow-lg hover:shadow-orange-500"
