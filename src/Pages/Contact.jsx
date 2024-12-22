@@ -41,14 +41,14 @@ const Contact = () => {
       };
       
     return (
-        <section id="Contact" className="p-8 bg-black text-white">
-            <h2 className="text-3xl font-bold text-slate-300 text-center font-mono mt-1 mb-10">
+        <section id="Contact" className="p-8 bg-black text-white ">
+            <h2 className="text-3xl font-bold text-slate-300 text-center font-mono mt-1 mb-10 reveal">
                 Let<span className="text-red-700">'</span>s Connect
             </h2>
 
             <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                 {/* Get In Touch Section */}
-                <div className="flex flex-col items-center bg-gray-800 text-white p-6 rounded-lg shadow-lg w-full md:w-1/3">
+                <div className="flex flex-col items-center bg-gray-800 text-white p-6 rounded-lg shadow-lg w-full md:w-1/3 reveal">
                     <h3 className="text-xl font-bold mb-4">Get In Touch</h3>
                     <p className="text-sm text-center mb-4">
                         Feel free to reach out to me via email or phone. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
@@ -68,7 +68,7 @@ const Contact = () => {
                 </div>
 
                 {/* Send a Message Section */}
-                <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg w-full md:w-1/3">
+                <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg w-full md:w-1/3 reveal">
                     <h3 className="text-xl font-bold mb-4 text-center">Send a Message</h3>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-4">
@@ -134,7 +134,7 @@ const Contact = () => {
             </div>
 
             {/* Social Media Links */}
-            <div className="mt-8 flex justify-center space-x-6">
+            <div className="mt-8 flex justify-center space-x-6 reveal">
                 <a href="https://linkedin.com/in/golu-kumar-7079b5246" target="_blank" rel="noopener noreferrer" className="text-white hover:text-orange-600 transform hover:scale-110 transition">
                     <FaLinkedin className="text-3xl" />
                 </a>

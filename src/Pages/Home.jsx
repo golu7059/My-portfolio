@@ -64,8 +64,8 @@ const Home = () => {
     };
 
     return (
-        <section id='Home' className="min-h-screen bg-black text-white flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-black ">
-            <div className="container mx-auto flex flex-col items-center md:flex-row">
+        <section id='Home' className="min-h-screen bg-black text-white flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-black">
+            <div className="container mx-auto flex flex-col items-center md:flex-row reveal">
                 <div className="flex items-center justify-center mt-8 md:mt-0 lg:w-1/2 md:order-last">
                     <img
                         src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/profileImage.JPG"
@@ -78,7 +78,7 @@ const Home = () => {
                     />
                 </div>
 
-                <div className="text-center md:text-left lg:w-1/2">
+                <div className="text-center md:text-left lg:w-1/2 reveal">
                     <h1 className="text-4xl md:text-5xl font-bold">
                         Hi, I am <span className="text-red-500">Golu Kumar</span>,
                     </h1>

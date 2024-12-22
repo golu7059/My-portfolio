@@ -3,14 +3,14 @@ import { FaSchool, FaGraduationCap, FaBook } from "react-icons/fa";
 
 const Education = () => {
     return (
-        <section id="Education" className="p-8 bg-gradient-to-b from-black via-blue-950 to-black text-white">
+        <section id="Education" className="p-8 bg-gradient-to-b from-black via-blue-950 to-black text-white ">
             <h2 className="text-4xl font-bold font-sans text-center mt-5 mb-16 animate-fadeIn tracking-wider">
                 My Academic Journey
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                {/* ABPN Bihita */}
-               <div className="bg-gradient-to-r from-white to-gray-200 text-black rounded-lg p-6 shadow-lg transform transition duration-700 hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-l hover:from-orange-100 hover:to-white">
+               <div className="bg-gradient-to-r from-white to-gray-200 text-black rounded-lg p-6 shadow-lg transform transition duration-700 hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-l hover:from-orange-100 hover:to-white reveal">
                     <div className="flex items-center mb-4">
                         <FaSchool className="text-orange-600 text-4xl mr-4 animate-bounce" />
                         <h3 className="text-xl font-bold">ABPN Bihita</h3>
@@ -28,7 +28,7 @@ const Education = () => {
                 </div>
 
                  {/* JNV Bihiya */}
-                <div className="bg-gradient-to-r from-white to-gray-200 text-black rounded-lg p-6 shadow-lg transform transition duration-700 hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-l hover:from-orange-100 hover:to-white">
+                <div className="bg-gradient-to-r from-white to-gray-200 text-black rounded-lg p-6 shadow-lg transform transition duration-700 hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-l hover:from-orange-100 hover:to-white reveal">
                     <div className="flex items-center mb-4">
                         <FaSchool className="text-orange-600 text-4xl mr-4 animate-bounce" />
                         <h3 className="text-xl font-bold">JNV Bihiya</h3>
@@ -47,7 +47,7 @@ const Education = () => {
                 </div>
 
                  {/* Parul University */}
-                 <div className="bg-gradient-to-r from-white to-gray-200 text-black rounded-lg p-6 shadow-lg transform transition duration-700 hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-l hover:from-orange-100 hover:to-white">
+                 <div className="bg-gradient-to-r from-white to-gray-200 text-black rounded-lg p-6 shadow-lg transform transition duration-700 hover:scale-110 hover:shadow-2xl hover:bg-gradient-to-l hover:from-orange-100 hover:to-white reveal">
                     <div className="flex items-center mb-4">
                         <FaGraduationCap className="text-orange-600 text-4xl mr-4 animate-bounce" />
                         <h3 className="text-xl font-bold">Parul University</h3>
