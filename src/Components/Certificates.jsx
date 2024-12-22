@@ -16,7 +16,7 @@ const Certificates = () => {
         <section id="Certificates" className="bg-black text-white py-16 px-8">
             <div className="container mx-auto flex flex-col md:flex-row items-center">
                 {/* Left side - Certificates Carousel */}
-                <div className="md:w-1/2 w-full">
+                <div className="md:w-1/2 w-full reveal">
                     <Carousel
                         showThumbs={false}
                         infiniteLoop
@@ -47,7 +47,7 @@ const Certificates = () => {
                 </div>
 
                 {/* Right side - Text Content */}
-                <div className="md:w-1/2 w-full mt-8 md:mt-0 md:pl-12 text-center md:text-left">
+                <div className="md:w-1/2 w-full mt-8 md:mt-0 md:pl-12 text-center md:text-left reveal">
                     <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500 mb-4">
                         Achievements & Certifications
                     </h2>

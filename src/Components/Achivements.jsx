@@ -6,7 +6,7 @@ const Achievements = () => {
     <section className="bg-black py-16 px-8  bg-gradient-to-b from-black via-gray-900 to-black">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         {/* Left side content */}
-        <div className="md:w-1/2 text-center md:text-left">
+        <div className="md:w-1/2 text-center md:text-left reveal">
           <h2 className="text-4xl font-bold text-white mb-4">
             <q> Where <span className="text-pink-500">Achievements</span> Meet Expectations </q>
           </h2>
@@ -29,7 +29,7 @@ const Achievements = () => {
         </div>
 
         {/* Right side images */}
-        <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+        <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center reveal">
           <div className="grid grid-cols-2 gap-4">
             {/* Each image in a circular mask */}
             <div className="transform hover:scale-105 transition duration-500">
@@ -55,8 +55,8 @@ const Achievements = () => {
             </div>
             <div className="transform hover:scale-105 transition duration-500">
               <img
-                src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/codeRazers_certificate.jpg"
-                alt="codeRazers certificate"
+                src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/codeCraftersCertificate.png"
+                alt="codeCrafters certificate"
                 className="w-full rounded-2xl shadow-lg hover:shadow-orange-500"
               />
             </div>

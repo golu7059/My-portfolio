@@ -33,7 +33,7 @@ const Technologies = () => {
       </motion.h2>
 
       {/* Technology Cards */}
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-8 reveal">
         {technologies.map((tech, index) => (
           <motion.div
             key={index}

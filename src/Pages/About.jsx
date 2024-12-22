@@ -2,16 +2,16 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div id="About" className="p-8 bg-black w-full flex items-center justify-center">
+    <div id="About" className="p-8 bg-black w-full flex items-center justify-center ">
       <div className="relative w-full max-w-5xl bg-white p-6 rounded-lg shadow-lg">
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg">
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg reveal">
           <img 
             className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-blue-500"
             src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/aboutCoding.png" 
             alt="coding_logo"
           /> 
         </div>
-        <div className="flex flex-col md:flex-row mt-16">
+        <div className="flex flex-col md:flex-row mt-16 reveal">
           <div className="md:w-1/2 p-4">
             <h2 className="text-2xl font-bold text-orange-600 font-mono text-center md:text-left">
               About Me
