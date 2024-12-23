@@ -1,0 +1,5 @@
+# Allow all search engines to crawl everything
+User-agent: *
+
+# Sitemap URL for search engines
+Sitemap: https://www.golukumar.com/sitemap.xml

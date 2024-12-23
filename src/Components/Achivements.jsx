@@ -34,28 +34,28 @@ const Achievements = () => {
             {/* Each image in a circular mask */}
             <div className="transform hover:scale-105 transition duration-500">
               <img
-                src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/leetcodeScreenshot.png"
+                src="https://res.cloudinary.com/di4z2y1fg/image/upload/v1734929280/leetcodeScreenshot_xj0zbt.png"
                 alt="LeetCode Profile"
                 className="w-full rounded-3xl shadow-lg hover:shadow-orange-500"
               />
             </div>
             <div className="transform hover:scale-105 transition duration-500">
               <img
-                src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/githubScreenshot.png"
+                src="https://res.cloudinary.com/di4z2y1fg/image/upload/v1734929301/githubScreenshot_nneok1.png"
                 alt="GitHub Activity"
                 className="w-full rounded-3xl shadow-lg hover:shadow-orange-500"
               />
             </div>
             <div className="transform hover:scale-105 transition duration-500">
               <img
-                src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/hackathoneCertificate.png"
+                src="https://res.cloudinary.com/di4z2y1fg/image/upload/v1734929573/hackathoneCertificate_ok0xf0.jpg"
                 alt="Hackathon Participation"
                 className="w-full rounded-3xl shadow-lg hover:shadow-orange-500"
               />
             </div>
             <div className="transform hover:scale-105 transition duration-500">
               <img
-                src="https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/codeCraftersCertificate.png"
+                src="https://res.cloudinary.com/di4z2y1fg/image/upload/v1734929994/codeCraftersCertificate_wgo9no.jpg"
                 alt="codeCrafters certificate"
                 className="w-full rounded-2xl shadow-lg hover:shadow-orange-500"
               />

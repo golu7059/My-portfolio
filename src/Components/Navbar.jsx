@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <header className="bg-black text-white p-4 fixed w-full top-0 left-0 z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center px-4 reveal">
-        <h1 className="text-2xl font-bold hover:text-red-600 cursor-pointer" onClick={() => window.open("https://golu7059.github.io/old-Portfolio/index.html", "_blank")}>Old Portfolio</h1>
+        <h1 className="text-2xl font-bold hover:text-red-600 cursor-pointer">Portfolio</h1>
 
         {/* Navigation Links (visible on larger screens) */}
         <nav className="hidden md:flex space-x-6">

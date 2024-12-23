@@ -4,18 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Golu Kumar Portfolio</title>
-    <link id="favicon" rel="icon" type="image/gif" href="static/favicon.gif" />
+
+    <!-- Favicon -->
+    <link id="favicon" rel="icon" type="image/webp" href="static/portfolioIcon.webp" />
+
+    <!-- Meta Description for SEO -->
+    <meta
+      name="description"
+      content="Golu Kumar's portfolio showcasing projects, achievements, and skills as a Full-Stack Developer."
+    />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Golu Kumar Portfolio" />
+    <meta property="og:description" content="Explore Golu Kumar's journey as a Full-Stack Developer." />
+    <meta property="og:image" content="static/portfolioPreview.webp" />
+    <meta property="og:url" content="https://www.golukumar.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Golu Kumar Portfolio" />
+    <meta name="twitter:description" content="Explore Golu Kumar's projects and achievements." />
+    <meta name="twitter:image" content="static/portfolioPreview.webp" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Golu Kumar",
+        "url": "https://www.golukumar.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/golu-kumar-7079b5246/",
+          "https://github.com/golu7059",
+          "https://leetcode.com/u/golukumarjaisidih/"
+        ],
+        "jobTitle": "Full-Stack Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Parul University"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Vadodara, Gujarat",
+          "addressCountry": "India"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- JavaScript Entry -->
     <script type="module" src="/src/main.jsx"></script>
-    <script>
-      const gifFavicon = 'https://https://tenor.com/en-GB/view/gcash-gif-24623995/favicon.gif';
-      const link = document.createElement('link');
-      link.rel = 'icon';
-      link.type = 'image/gif';
-      link.href = gifFavicon;
-      document.head.appendChild(link);
-    </script>
   </body>
 </html>
