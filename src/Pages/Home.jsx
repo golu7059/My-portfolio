@@ -64,7 +64,7 @@ const Home = () => {
     };
 
     return (
-        <section id='Home' className="min-h-screen bg-black text-white flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-black">
+        <section id='Home' className="min-h-screen bg-black text-white flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden">
             <div className="container mx-auto flex flex-col items-center md:flex-row reveal">
                 <div className="flex items-center justify-center mt-8 md:mt-0 lg:w-1/2 md:order-last">
                     <img
