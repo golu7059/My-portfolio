@@ -31,7 +31,7 @@ const Home = () => {
     
             // Create a link element to trigger the download
             const link = document.createElement('a');
-            link.href = "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/Golu_Kumar_Resume.pdf";
+            link.href = "https://raw.githubusercontent.com/golu7059/My-portfolio/master/Public/Resume_Golu_Kumar.pdf";
             link.download = "Golu-Kumar-Resume.pdf";
             link.click(); // Trigger the download programmatically
         }, 2000); // 2 seconds delay to simulate download
