@@ -14,7 +14,6 @@ const Technologies = () => {
     { name: "Node.js", icon: <FaNodeJs className="text-6xl text-green-500" /> },
     { name: "React", icon: <FaReact className="text-6xl text-blue-400" /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-6xl text-teal-300" /> },
-    { name: "Django", icon: <SiDjango className="text-6xl text-green-600" /> },
     { name: "MySQL", icon: <SiMysql className="text-6xl text-blue-600" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-6xl text-green-500" /> },
     { name: "PostgreSQL", icon: <SiPostgresql className="text-6xl text-blue-500" /> },
