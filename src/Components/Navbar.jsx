@@ -62,8 +62,8 @@ const Navbar = () => {
             <FaCode className="text-white text-lg" />
           </div>
           <h1 className="text-2xl font-bold text-white">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 group-hover:from-orange-300 group-hover:to-red-500 transition-all duration-300">Golu.</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300 group-hover:from-white group-hover:to-white transition-all duration-300">dev</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 group-hover:from-orange-300 group-hover:to-red-500 transition-all duration-300">golukumar.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300 group-hover:from-white group-hover:to-white transition-all duration-300">com</span>
           </h1>
         </div>
 
