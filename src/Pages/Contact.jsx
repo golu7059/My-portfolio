@@ -7,7 +7,7 @@ import { toast } from 'react-hot-toast';
 
 const Contact = () => {
     const [submitStatus, setSubmitStatus] = useState('normal');
-    const [formValues, setFormValues] = useState({ name: '', email: '', message: '' });
+    const [formValues, setFormValues] = useState({ from_name: '', from_email: '', message: '' });
     const [activeInput, setActiveInput] = useState(null);
     const formRef = useRef(null);
     const contactSectionRef = useRef(null);
@@ -77,7 +77,7 @@ const Contact = () => {
                 () => {
                     setSubmitStatus("sent");
                     toast.success("Message sent successfully!", { id: toastId });
-                    setFormValues({ name: '', email: '', message: '' });
+                    setFormValues({ from_name: '', from_email: '', message: '' });
                     setActiveInput(null);
                     
                     setTimeout(() => {
@@ -212,17 +212,17 @@ const Contact = () => {
                                         type="text"
                                         id="name"
                                         name="from_name"
-                                        value={formValues.name}
+                                        value={formValues.from_name}
                                         onChange={handleInputChange}
-                                        onFocus={() => handleFocus('name')}
-                                        onBlur={() => handleBlur('name')}
+                                        onFocus={() => handleFocus('from_name')}
+                                        onBlur={() => handleBlur('from_name')}
                                         className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-transparent peer"
                                         required
                                     />
                                     <label 
                                         htmlFor="name" 
                                         className={`absolute text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] left-4 peer-focus:text-orange-400 peer-focus:-translate-y-4 peer-focus:scale-75 ${
-                                            activeInput === 'name' || formValues.name ? '-translate-y-4 scale-75 text-orange-400' : 'translate-y-0 scale-100'
+                                            activeInput === 'from_name' || formValues.from_name ? '-translate-y-4 scale-75 text-orange-400' : 'translate-y-0 scale-100'
                                         }`}
                                     >
                                         Your Name
@@ -235,17 +235,17 @@ const Contact = () => {
                                         type="email"
                                         id="email"
                                         name="from_email"
-                                        value={formValues.email}
+                                        value={formValues.from_email}
                                         onChange={handleInputChange}
-                                        onFocus={() => handleFocus('email')}
-                                        onBlur={() => handleBlur('email')}
+                                        onFocus={() => handleFocus('from_email')}
+                                        onBlur={() => handleBlur('from_email')}
                                         className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-transparent peer"
                                         required
                                     />
                                     <label 
                                         htmlFor="email" 
                                         className={`absolute text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] left-4 peer-focus:text-orange-400 peer-focus:-translate-y-4 peer-focus:scale-75 ${
-                                            activeInput === 'email' || formValues.email ? '-translate-y-4 scale-75 text-orange-400' : 'translate-y-0 scale-100'
+                                            activeInput === 'from_email' || formValues.from_email ? '-translate-y-4 scale-75 text-orange-400' : 'translate-y-0 scale-100'
                                         }`}
                                     >
                                         Your Email
