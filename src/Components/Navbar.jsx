@@ -1,137 +1,292 @@
-import React, { useState, useEffect } from "react";
-import { FaBars, FaTimes, FaCode } from "react-icons/fa";
+import React, { useState, useEffect } from 'react';
+import { FaHome, FaUser, FaBriefcase, FaLaptopCode, FaEnvelope } from "react-icons/fa";
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState('Home');
-
-  // Track scroll position for styling and active section
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-      
-      // Determine active section based on scroll position
-      const sections = ['Home', 'About', 'Education', 'Certificates', 'Projects', 'Contact'];
-      for (const section of sections.reverse()) {
-        const element = document.getElementById(section);
-        if (element && window.scrollY >= element.offsetTop - 300) {
-          setActiveSection(section);
-          break;
+const Navbar = ({ activeSection }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    
+    // Sections matching your actual components
+    const sections = [
+        { id: "home", name: "Home", icon: <FaHome /> },
+        { id: "about", name: "About", icon: <FaUser /> },
+        { id: "projects", name: "Projects", icon: <FaBriefcase /> },
+        { id: "technologies", name: "Skills", icon: <FaLaptopCode /> }, // Changed to match your Languages component
+        { id: "contact", name: "Contact", icon: <FaEnvelope /> }
+    ];
+    
+    // Update navbar background on scroll
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+        
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+    
+    // Enhanced scroll to section - Fixed to work with your components
+    const scrollToSection = (id) => {
+        // Convert id to lowercase for consistency
+        const sectionId = id.toLowerCase();
+        
+        // Map certain IDs to their actual component IDs
+        const idMap = {
+            'skills': 'technologies' // Map skills to your Technologies section
+        };
+        
+        // Use mapped ID if it exists, otherwise use the original
+        const targetId = idMap[sectionId] || sectionId;
+        
+        const section = document.getElementById(targetId);
+        if (section) {
+            // Get header height to offset scroll position
+            const headerHeight = document.querySelector('.fixed-navbar')?.offsetHeight || 70;
+            
+            // Calculate position with offset
+            const elementPosition = section.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - headerHeight;
+            
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        } else {
+            console.warn(`Section with id "${targetId}" not found`);
         }
-      }
+        setIsOpen(false);
     };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop,
-        behavior: 'smooth'
-      });
-    }
-    closeMenu();
-  };
-
-  return (
-    <header 
-      className={`fixed w-full top-0 left-0 z-50 transition-all duration-500 ${
-        scrolled 
-          ? 'bg-black/75 backdrop-blur-xl py-3 shadow-lg shadow-black/30 border-b border-white/5' 
-          : 'bg-transparent py-5'
-      }`}
-    >
-      <div className="container mx-auto flex justify-between items-center px-6 reveal">
-        <div 
-          className="flex items-center gap-3 cursor-pointer group"
-          onClick={() => scrollToSection('Home')}
-        >
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center shadow-xl shadow-orange-600/20 group-hover:shadow-orange-500/30 group-hover:scale-105 transition-all duration-300">
-            <FaCode className="text-white text-lg" />
-          </div>
-          <h1 className="text-2xl font-bold text-white">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 group-hover:from-orange-300 group-hover:to-red-500 transition-all duration-300">golukumar.</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300 group-hover:from-white group-hover:to-white transition-all duration-300">com</span>
-          </h1>
-        </div>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:block">
-          <ul className="flex gap-3">
-            {['Home', 'About', 'Education', 'Certificates', 'Projects', 'Contact'].map((item) => (
-              <li key={item}>
-                <button
-                  onClick={() => scrollToSection(item)}
-                  className={`px-4 py-2 rounded-full font-medium transition-all duration-300 relative ${
-                    activeSection === item 
-                      ? 'text-white bg-gradient-to-br from-orange-500 to-red-600 shadow-lg shadow-orange-600/20 scale-105' 
-                      : 'text-gray-300 hover:text-white hover:bg-white/10 hover:shadow-md hover:shadow-white/5'
-                  }`}
-                >
-                  <span>{item}</span>
-                  {activeSection !== item && (
-                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-red-600 group-hover:w-1/2 transition-all duration-300"></span>
-                  )}
-                </button>
-              </li>
-            ))}
-          </ul>
+    
+    return (
+        <nav className={`fixed-navbar ${scrolled ? 'scrolled' : ''}`}>
+            <div className="navbar-container">
+                <div className="navbar-brand">
+                    <button 
+                        onClick={() => scrollToSection('home')}
+                        className="navbar-logo-button"
+                    >
+                        <div className="navbar-logo">
+                            <span>GK</span>
+                        </div>
+                    </button>
+                </div>
+                
+                <div className="navbar-links-container">
+                    <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
+                        {sections.map((section) => {
+                            // Check if we need to display a different active state based on remapped IDs
+                            const isActive = section.id === 'technologies' && activeSection === 'skills' 
+                                ? true 
+                                : activeSection === section.id;
+                                
+                            return (
+                                <button
+                                    key={section.id}
+                                    onClick={() => scrollToSection(section.id)}
+                                    className={`navbar-link ${isActive ? 'active' : ''}`}
+                                >
+                                    <span className="navbar-icon">{section.icon}</span>
+                                    <span className="navbar-text">{section.name}</span>
+                                    {isActive && (
+                                        <div className="navbar-active-indicator"></div>
+                                    )}
+                                </button>
+                            );
+                        })}
+                    </div>
+                    
+                    <button 
+                        className={`navbar-toggle ${isOpen ? 'open' : ''}`} 
+                        onClick={() => setIsOpen(!isOpen)}
+                        aria-label="Toggle menu"
+                    >
+                        <div className="toggle-bar"></div>
+                        <div className="toggle-bar"></div>
+                        <div className="toggle-bar"></div>
+                    </button>
+                </div>
+            </div>
+            
+            <style jsx>{`
+                .fixed-navbar {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 70px;
+                    z-index: 100;
+                    transition: all 0.3s ease;
+                    background: rgba(0, 0, 0, 0.5);
+                    backdrop-filter: blur(10px);
+                }
+                
+                .fixed-navbar.scrolled {
+                    background: rgba(0, 0, 0, 0.85);
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+                }
+                
+                .navbar-container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 1.25rem;
+                }
+                
+                .navbar-logo {
+                    position: relative;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: linear-gradient(to right, #3b82f6, #6366f1);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+                }
+                
+                .navbar-links-container {
+                    display: flex;
+                    align-items: center;
+                }
+                
+                .navbar-links {
+                    display: flex;
+                    gap: 1rem;
+                }
+                
+                .navbar-link {
+                    position: relative;
+                    background: transparent;
+                    border: none;
+                    color: white;
+                    padding: 0.5rem 0.75rem;
+                    cursor: pointer;
+                    font-size: 0.9rem;
+                    opacity: 0.7;
+                    transition: all 0.3s ease;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    border-radius: 0.25rem;
+                }
+                
+                .navbar-link:hover,
+                .navbar-link.active {
+                    opacity: 1;
+                    background: rgba(255, 255, 255, 0.05);
+                }
+                
+                .navbar-icon {
+                    font-size: 1rem;
+                }
+                
+                .navbar-active-indicator {
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    border-radius: 1px;
+                    background: linear-gradient(to right, #3b82f6, #6366f1);
+                }
+                
+                .navbar-toggle {
+                    display: none;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 24px;
+                    height: 18px;
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;
+                    padding: 0;
+                    z-index: 10;
+                }
+                
+                .toggle-bar {
+                    width: 100%;
+                    height: 2px;
+                    background-color: white;
+                    border-radius: 1px;
+                    transition: all 0.3s ease;
+                }
+                
+                .navbar-toggle.open .toggle-bar:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+                
+                .navbar-toggle.open .toggle-bar:nth-child(2) {
+                    opacity: 0;
+                }
+                
+                .navbar-toggle.open .toggle-bar:nth-child(3) {
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+                
+                @media (max-width: 768px) {
+                    .navbar-links {
+                        position: fixed;
+                        top: 70px;
+                        right: -100%;
+                        width: 240px;
+                        height: auto;
+                        max-height: calc(100vh - 70px);
+                        background: rgba(0, 0, 0, 0.9);
+                        backdrop-filter: blur(10px);
+                        flex-direction: column;
+                        padding: 1rem;
+                        transition: all 0.3s ease;
+                        border-radius: 0 0 0 0.75rem;
+                        overflow-y: auto;
+                        box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.3);
+                    }
+                    
+                    .navbar-links.open {
+                        right: 0;
+                    }
+                    
+                    .navbar-link {
+                        width: 100%;
+                        justify-content: flex-start;
+                        padding: 0.75rem 1rem;
+                    }
+                    
+                    .navbar-active-indicator {
+                        left: 0;
+                        bottom: 0;
+                        width: 3px;
+                        height: 100%;
+                    }
+                    
+                    .navbar-toggle {
+                        display: flex;
+                    }
+                }
+                
+                /* Add button styling for logo */
+                .navbar-logo-button {
+                    background: transparent;
+                    border: none;
+                    padding: 0;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+                }
+                
+                .navbar-logo-button:hover {
+                    transform: scale(1.05);
+                }
+                
+                .navbar-logo-button:active {
+                    transform: scale(0.98);
+                }
+            `}</style>
         </nav>
-
-        {/* Mobile Menu Trigger */}
-        <button
-          className="md:hidden z-50 w-10 h-10 rounded-full bg-gradient-to-br from-black/80 to-gray-900/80 flex items-center justify-center backdrop-blur-xl border border-white/10 shadow-lg hover:shadow-orange-600/20 transition-all duration-300"
-          onClick={toggleMenu}
-          aria-label={isOpen ? "Close menu" : "Open menu"}
-        >
-          {isOpen ? (
-            <FaTimes className="text-orange-500 text-lg" />
-          ) : (
-            <FaBars className="text-orange-500 text-lg" />
-          )}
-        </button>
-      </div>
-
-      {/* Mobile Navigation Overlay */}
-      <div 
-        className={`fixed inset-0 bg-black/95 backdrop-blur-xl z-40 flex items-center justify-center transition-all duration-500 ${
-          isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
-      >
-        <ul className="flex flex-col items-center space-y-8 py-6">
-          {['Home', 'About', 'Education', 'Certificates', 'Projects', 'Contact'].map((item) => (
-            <li key={item} className="overflow-hidden">
-              <button
-                onClick={() => scrollToSection(item)}
-                className={`text-2xl font-medium transition-all duration-300 relative ${
-                  activeSection === item 
-                    ? 'text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 scale-110' 
-                    : 'text-gray-300 hover:text-white'
-                }`}
-              >
-                {item}
-                {activeSection === item && (
-                  <span className="absolute left-0 -bottom-2 w-full h-1 bg-gradient-to-r from-orange-500 to-red-600 rounded-full animate-pulse"></span>
-                )}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </header>
-  );
+    );
 };
 
 export default Navbar;
