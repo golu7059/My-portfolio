@@ -99,7 +99,7 @@ export default function Profile() {
           <div className="font-semibold text-sm">10+</div>
         </div>
         <div className="p-3 rounded-lg bg-white/3">
-          <div className="text-xs text-[color:var(--muted)]">Solved</div>
+          <div className="text-xs text-[color:var(--muted)]">Leetcode</div>
           <div className="font-semibold text-sm">1000+</div>
         </div>
       </div>
