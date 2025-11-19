@@ -79,7 +79,7 @@ export default function Profile() {
         <ul className="list-disc list-inside text-sm text-[color:var(--muted)] space-y-1">
           <li>Full-stack development (React, Next.js, Node.js)</li>
           <li>
-            DSA problem-solving and participate in coding contests
+            Practice and Enhance Problem Solving Skills
           </li>
           <li>Learning modern AI engineering: LLMs, RAG, Agents, LangChain/LangGraph</li>
           <li>
