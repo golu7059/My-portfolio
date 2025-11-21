@@ -46,7 +46,7 @@ export default function Profile() {
           LinkedIn
         </a>
         <a
-          href="https://leetcode.com/u/goluk/"
+          href="https://leetcode.com/u/golukumarjaisidih/"
           target="_blank"
           className="text-sm px-3 py-2 rounded-md border border-white/6 hover:bg-white/5"
         >
@@ -66,7 +66,7 @@ export default function Profile() {
         <a
           href="/Golu_Kumar_Resume.pdf"
           target="_blank"
-          download = "Golu_Kumar_Resume.pdf"
+          download="Golu_Kumar_Resume.pdf"
           className="block text-sm px-3 py-2 rounded-md border border-white/6 hover:bg-white/5"
         >
           Download Resume
@@ -78,10 +78,11 @@ export default function Profile() {
         <h3 className="text-sm font-medium text-white mb-2">Tech Interests</h3>
         <ul className="list-disc list-inside text-sm text-[color:var(--muted)] space-y-1">
           <li>Full-stack development (React, Next.js, Node.js)</li>
+          <li>Practice and Enhance Problem Solving Skills</li>
           <li>
-            Practice and Enhance Problem Solving Skills
+            Learning modern AI engineering: LLMs, RAG, Agents,
+            LangChain/LangGraph
           </li>
-          <li>Learning modern AI engineering: LLMs, RAG, Agents, LangChain/LangGraph</li>
           <li>
             A strong passion for learning, building, and improving through code
           </li>
